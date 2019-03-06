@@ -20,6 +20,8 @@
     }
 }
 .banner {
+    background-image: url("../img/textura.png");
+
     align-content: center;
     font-family: "Bangers";
     font-size: 50pt;
@@ -49,7 +51,7 @@
 }
 .banner__subtitle {
     font-family: "Oxygen";
-    font-size: 22pt;
+    font-size: 18pt;
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -113,35 +115,34 @@
 
 .banner--conocimiento {
     background-color: #A0EEDA;
-    background-image: url("../img/textura.png");
+    
 }
 .banner--conocimiento__block{
     background-color: #CFF7ED;
-    background-image: url("../img/textura.png");
+    
 }
 .banner--drupalcamp {
     background-color: #FBF9C7;
-    background-image: url("../img/textura.png");
+    
 }
 .banner--drupalcamp__block{
     background-color: #F7F4B0;
-    background-image: url("../img/textura.png");
+    
 }
 .banner--drupalcamp__paragraph, .banner--educacion__paragraph {
     margin: 0;
 }
 .banner--educacion {
     background-color: #8FDFF1;
-    background-image: url("../img/textura.png");
+    
 }
 .banner--education__block{
     background-color: #97ECFF;
-    background-image: url("../img/textura.png");
     text-align: center;
 }
 .banner--fellowship {
     background-color: #E2FCFF;
-    background-image: url("../img/textura.png");
+    
 }
 .banner--fellowship__img{
     margin-left: 0;
@@ -151,7 +152,7 @@
 }
 .banner--clientes {
     background-color: #FFD4E9;
-    background-image: url("../img/textura.png");
+    
 }
 .banner--clientes__logos{
     width: 100%;
@@ -162,7 +163,7 @@
 }
 .banner--accesibilidad {
     background-color: #7D5B92;
-    background-image: url("../img/textura.png");
+    
     color: #FFFFFF;
 }
 .banner--accesibilidad__block {
@@ -180,7 +181,7 @@
 }
 .banner--sectorpublico {
     background-color: #B1ECDB;
-    background-image: url("../img/textura.png");
+    
 }
 .banner--sectorpublico__block{
     background-color: #CFF7ED;
@@ -189,21 +190,21 @@
 }
 .banner--talleres {
     background-color: #FBF9C7;
-    background-image: url("../img/textura.png");
+    
 }
 .banner--talleres__block {
     background-color: #F7F4B0;
-    background-image: url("../img/textura.png");
+    
     margin-left: 30%;
     margin-right: 30%;
 }
 .banner--modulos {
     background-color: #8FDFF1;
-    background-image: url("../img/textura.png");
+    
 }
 .banner--contribuciones {
     background-color: #E2FCFF;
-    background-image: url("../img/textura.png");
+    
 }
 .banner--contribuciones__block {
     padding-top: 100px;
@@ -219,15 +220,15 @@
 }
 .banner--cancion {
     background-color: #FFD4E9;
-    background-image: url("../img/textura.png");
+    
 }
 .banner--pasantias {
     background-color: #E2FCFF;
-    background-image: url("../img/textura.png");
+    
 }
 .banner--pizza{
     background-color: #A0EEDA;
-    background-image: url("../img/textura.png");
+    
 }
 .banner--pizza__img, .banner--cafe__img{
     width: 100%;
@@ -235,23 +236,23 @@
 }
 .banner--salud{
     background-color: #FBF8CC;
-    background-image: url("../img/textura.png");
+    
 }
 .banner--dota {
     background-color: #A0DDEE;
-    background-image: url("../img/textura.png");
+    
 }
 .banner--copa {
     background-color: #E7FBFE;
-    background-image: url("../img/textura.png");
+    
 }
 .banner--cafe {
     background-color: #F8D6E8;
-    background-image: url("../img/textura.png");
+    
 }
 .banner--futuro{
     background-color: #785E8F;
-    background-image: url("../img/textura.png");
+    
 }
 .banner--futuro__img {
     padding: 0;
