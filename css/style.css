@@ -1,24 +1,88 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Bangers');
 @import url('https://fonts.googleapis.com/css?family=Oxygen');
 
-h1, h2, h3, h4, h5 {
-    color: #26333F;
-    font-family: "Raleway", sans-serif;
-    font-size: 22px;
+@media (max-width : 1200px) {
+    .banner__container{
+        margin: 0;
+    }
+}
+@media (min-width:1205px) {
+    .banner__container{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+@media (min-width:1400px) {
+    .banner__container{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+.banner {
+    align-content: center;
+    font-family: "Bangers";
+    font-size: 50pt;
+    font-weight: bold;
+    padding: 60px 100px;
+}
+.banner__block {
+    padding: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.banner__container{
+    max-width: 1200px;
+}
+.banner__row {
+    display: flex;
+}
+.banner__title, .banner__subtitle{
+    color: #2E3B46;
+    line-height: 120%;
+    text-align: center;
+}
+.banner__title{
+    font-family: "Bangers";
+    font-size: 50pt;
+    margin-top:60px;
+}
+.banner__subtitle {
+    font-family: "Oxygen";
+    font-size: 22pt;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.banner__paragraph, .banner__ul, .banner__ol {
+    font-family: "Oxygen";
+    font-size: 16pt;
+    font-weight: 100;
+    line-height: 120%;
     margin: 0;
 }
-h1 {
-    font-family: "Bangers";
-    font-size: 60px;
+.font-12 {
+    font-size: 12pt;
 }
-h2 {
-    font-size: 30px;
+.separator{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 47%;
 }
-p, ul, ol {
-    font-family: "Oxygen";
-    font-size: 22px;
+.bold {
+    font-weight: bold;
+}
+.left{
+    text-align: left;
+}
+.center{
+    text-align: center;
+}
+.banner__img{
+    margin-top: -150px;
+    padding-left: 20%;
+    max-width: 60%; 
 }
 .col-1 {
     width: 50%;
@@ -27,115 +91,169 @@ p, ul, ol {
     margin-left: 50px;
     width: 50%;
 }
-.banner {
-    padding: 90px 100px;
-}
-.banner h1 {
-    width: 60%;
-}
-.banner h2 {
-    margin-bottom: 90px;
-}
-.banner .content {
-    display: flex;
-}
-.bold {
-    font-weight: bold;
-}
-.manati {
+.banner--manati {
     background-color: #2E3B47;
     display: flex;
+    padding: 100px;
 }
-.manati p {
-    color: white;
-    font-family: "Raleway", sans-serif;
+.banner--manati__paragraph {
+    color: #FFFFFF;
+    font-family: "Oxygen", sans-serif;
     font-size: 22px;
     margin-left: 50px;
-    margin-top: 150px;
+    margin-top: 225px;
 }
-.manati img {
+.banner--manati__img {
     padding: 0;
     display: flex;
-    height: 512px;
-    width: 580px;
+    width: 600px;
+    max-height: 500px;
+    max-width: 50%;
 }
-.banner-img{
-    margin-top: -150px;
-    padding-left: 20%;
-    width: 60%; 
-}
-.conocimiento, .pizza {
+
+.banner--conocimiento {
     background-color: #A0EEDA;
+    background-image: url("../img/textura.png");
 }
-.drupalcamp, .salud {
+.banner--conocimiento__block{
+    background-color: #CFF7ED;
+    background-image: url("../img/textura.png");
+}
+.banner--drupalcamp {
     background-color: #FBF9C7;
+    background-image: url("../img/textura.png");
 }
-.drupalcamp p, .educacion p{
+.banner--drupalcamp__block{
+    background-color: #F7F4B0;
+    background-image: url("../img/textura.png");
+}
+.banner--drupalcamp__paragraph, .banner--educacion__paragraph {
     margin: 0;
 }
-.educacion, .dota {
+.banner--educacion {
     background-color: #8FDFF1;
+    background-image: url("../img/textura.png");
 }
-.fellowship,.copa {
+.banner--education__block{
+    background-color: #97ECFF;
+    background-image: url("../img/textura.png");
+    text-align: center;
+}
+.banner--fellowship {
     background-color: #E2FCFF;
+    background-image: url("../img/textura.png");
 }
-.fellowship img{
+.banner--fellowship__img{
     margin-left: 0;
     margin-top: -450px;
     padding-left: 0;
     width: 100%;
 }
-.alianzas,.cafe {
+.banner--clientes {
     background-color: #FFD4E9;
+    background-image: url("../img/textura.png");
 }
-.alianzas img {
-    flex-direction: row;
-    margin-right: 50px;
-    margin-top: 80px;
-    width: 200px;
-}
-.alianzas .mana-planet{
+.banner--clientes__logos{
     width: 100%;
 }
-.accesibilidad, .futuro {
+.banner--clientes__logo {
+    flex-direction: row;
+    width: 11.5%;
+}
+.banner--accesibilidad {
     background-color: #7D5B92;
+    background-image: url("../img/textura.png");
+    color: #FFFFFF;
 }
-.accesibilidad h1, .futuro h1{
-    color: white;
-    letter-spacing: 2px;
+.banner--accesibilidad__block {
+    background-color:  #75518C;
+    text-align: center;
 }
-.accesibilidad h2,
-.accesibilidad p,
-.futuro p{
-    color: white;
+.space{
+    margin-bottom: 16pt;
 }
-.sectorpublico {
-    background-color: #A0EEDA;
+.light{
+    font-weight: 100;
 }
-.sectorpublico ol,
-.talleres ol {
-    padding-left: 20%;
+.white {
+    color: #FFFFFF;
 }
-.talleres {
+.banner--sectorpublico {
+    background-color: #B1ECDB;
+    background-image: url("../img/textura.png");
+}
+.banner--sectorpublico__block{
+    background-color: #CFF7ED;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.banner--talleres {
     background-color: #FBF9C7;
+    background-image: url("../img/textura.png");
 }
-.modulos {
+.banner--talleres__block {
+    background-color: #F7F4B0;
+    background-image: url("../img/textura.png");
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.banner--modulos {
     background-color: #8FDFF1;
+    background-image: url("../img/textura.png");
 }
-.contribuciones {
+.banner--contribuciones {
     background-color: #E2FCFF;
+    background-image: url("../img/textura.png");
 }
-.cancion {
+.banner--contribuciones__block {
+    padding-top: 100px;
+    padding-left: 60px;
+    padding-right: 90px;
+    padding-bottom: 30px;
+}
+.banner__bg__img {
+    background-position: 0px 20px;
+    background-size: 100%;
+    background-image: url("../img/Contribuciones/contribuciones.png");
+    background-repeat: no-repeat;
+}
+.banner--cancion {
     background-color: #FFD4E9;
+    background-image: url("../img/textura.png");
 }
-.pasantias {
+.banner--pasantias {
     background-color: #E2FCFF;
+    background-image: url("../img/textura.png");
 }
-.pizza img, .cafe img{
+.banner--pizza{
+    background-color: #A0EEDA;
+    background-image: url("../img/textura.png");
+}
+.banner--pizza__img, .banner--cafe__img{
     width: 100%;
     margin-top: -250px;
 }
-.futuro img {
+.banner--salud{
+    background-color: #FBF8CC;
+    background-image: url("../img/textura.png");
+}
+.banner--dota {
+    background-color: #A0DDEE;
+    background-image: url("../img/textura.png");
+}
+.banner--copa {
+    background-color: #E7FBFE;
+    background-image: url("../img/textura.png");
+}
+.banner--cafe {
+    background-color: #F8D6E8;
+    background-image: url("../img/textura.png");
+}
+.banner--futuro{
+    background-color: #785E8F;
+    background-image: url("../img/textura.png");
+}
+.banner--futuro__img {
     padding: 0;
     margin-left: -100px;
     width: 80%;
