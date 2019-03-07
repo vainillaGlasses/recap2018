@@ -21,6 +21,7 @@
 }
 .banner {
     background-image: url("../img/textura.png");
+    margin: 0;
     align-content: center;
     padding: 60px 100px;
 }
@@ -78,12 +79,13 @@
     text-align: center;
 }
 .banner__img {
-    margin-top: -150px;
+    margin-top: 60px;
     padding-left: 20%;
     max-width: 60%; 
 }
 .textura{
     background-image: url("../img/textura.png");
+    margin: 0;
 }
 .col-1 {
     width: 50%;
@@ -199,9 +201,9 @@
     padding-bottom: 30px;
 }
 .banner__bg__img {
-    background-position: 0px 20px;
+    background-position: 0px 0px;
     background-size: 100%;
-    background-image: url("../img/Contribuciones/contribuciones.png");
+    background-image: url("../img/contribu/contribu.png");
     background-repeat: no-repeat;
 }
 .banner--cancion {
