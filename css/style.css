@@ -268,12 +268,17 @@
     margin-left: -100px;
     width: 80%;
 }
-.animacion{
+.banner--animacion{
+    max-width: 80%;
+    justify-content: center;
+    justify-items: center;
+}
+.animacion-izq{
     position: absolute;
     height: 250px;
     width: 250px;
     max-width: 60%;
-    margin-left: -900px;
+    margin-left: -800px;
     margin-top: 150px;
     animation-name: stretch;
     animation-duration: 1.5s; 
