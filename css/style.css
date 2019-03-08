@@ -79,6 +79,7 @@
     text-align: center;
 }
 .banner__img {
+    position: relative;
     margin-top: 60px;
     padding-left: 20%;
     max-width: 60%; 
@@ -267,3 +268,31 @@
     margin-left: -100px;
     width: 80%;
 }
+.animacion{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    max-width: 60%;
+    margin-left: -900px;
+    margin-top: 150px;
+    animation-name: stretch;
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes stretch {
+    0% {
+      transform: scale(.3);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100% {
+      transform: scale(2);
+    }
+  }
