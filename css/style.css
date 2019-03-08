@@ -15,8 +15,8 @@
 }
 @media (min-width:1400px) {
     .banner__container{
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }
 .banner {
@@ -146,14 +146,31 @@
     width: 100%;
 }
 .banner--clientes {
-    background-color: #FFD4E9;   
+    background-color: #FDFDFD;   
 }
 .banner--clientes__logos{
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.banner--cliente--bg__logo {
+    background-color: #e6e6e6; 
+    background-image: url("../img/textura.png");
+    height: 190px;
+    width: 350px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 .banner--clientes__logo {
-    flex-direction: row;
-    width: 11.5%;
+    height: 80px;
+    width: 245px;
+    margin-top: 55px;
+    margin-left: 60px; 
+    padding: 0;
+}
+.logo--cuadrado{
+    margin-left: 140px;
+    height: 80px;
+    width: 80px;
 }
 .banner--accesibilidad {
     background-color: #7D5B92;
