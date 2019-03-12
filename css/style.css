@@ -161,22 +161,34 @@
     margin-right: 20px;
     margin-bottom: 20px;
 }
+.banner--clientes__logos{
+    display: flex;
+    flex-direction: row;
+}
+.banner--cliente--bg__logo {
+    background-color: #e6e6e6; 
+    background-image: url("../img/textura.png");
+    height: 190px;
+    width: 300px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
 .banner--clientes__logo {
     height: 80px;
-    width: 245px;
+    width: 200px;
     margin-top: 55px;
-    margin-left: 60px; 
+    margin-left: 50px;
     padding: 0;
 }
 .logo--cuadrado{
-    margin-left: 140px;
+    margin-left: 115px;
     height: 80px;
     width: 80px;
 }
 .logo--semicuadrado{
-    margin-left: 90px;
     height: 80px;
-    width: 180px;
+    width: 170px;
+    margin-left: 70px;
 }
 .banner--accesibilidad {
     background-color: #7D5B92;
