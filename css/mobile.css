@@ -1,40 +1,13 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Bangers');
 @import url('https://fonts.googleapis.com/css?family=Oxygen');
-
-@media (max-width : 1200px) {
-    .banner__container{
-        margin: 0;
-    }
-}
-@media (min-width:1205px) {
-    .banner__container{
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-}
-@media (min-width:1400px) {
-    .banner__container{
-        margin-left: 10%;
-        margin-right: 10%;
-    }
+body{
+    width: 480px;
 }
 .banner {
     background-image: url("../img/textura.png");
     margin: 0;
     align-content: center;
-    padding: 60px 100px;
-}
-.banner__block {
-    padding: 30px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-}
-.banner__container{
-    max-width: 1200px;
-}
-.banner__row {
-    display: flex;
 }
 .banner__title, .banner__subtitle {
     color: #2E3B46;
@@ -43,36 +16,29 @@
 }
 .banner__title{
     font-family: "Bangers";
-    font-size: 50pt;
+    font-size: 30pt;
     margin: 0;
+    padding-top: 40px;
 }
 .banner__subtitle {
     font-family: "Oxygen";
     font-size: 18pt;
     font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .banner__paragraph, .banner__ul, .banner__ol {
     font-family: "Oxygen";
     font-size: 14pt;
     font-weight: 100;
-    line-height: 120%;
     margin: 0;
 }
-.font-12 {
-    font-size: 12pt;
-}
-.font-14{
-    font-size: 14pt;
-}
 .separator{
-    margin-bottom: 30px;
-    margin-left: 47%;
-}
-.left-align{
-    padding-left: 90px;
+    margin-bottom: 20px;
+    margin-left: 40%;
 }
 .bold {
     font-weight: bold;
@@ -84,58 +50,49 @@
     text-align: center;
 }
 .banner__img {
-    position: relative;
-    margin-top: 60px;
-    padding-left: 20%;
-    max-width: 60%; 
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .textura{
     background-image: url("../img/textura.png");
     margin: 0;
 }
-.space{
-    letter-spacing: 1px;
-}
-.col-1 {
-    width: 50%;
-}
-.col-2 {
-    margin-left: 50px;
-    width: 50%;
-}
 .banner--manati {
+    padding: 0;
+    margin: 0;
     background-color: #2E3B47;
-    display: flex;
-    padding: 100px;
 }
 .banner--manati__paragraph {
     color: #FFFFFF;
     font-family: "Oxygen", sans-serif;
-    font-size: 22px;
-    margin-left: 50px;
-    margin-top: 225px;
+    font-size: 18px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    line-height: 30px;
 }
 .banner--manati__img {
-    padding: 0;
-    display: flex;
-    width: 600px;
-    max-height: 500px;
-    max-width: 50%;
+    padding-left: 30px;
+    padding-top: 20px;
+    width: 300px;
 }
-
 .banner--conocimiento {
     background-color: #A0EEDA;
 }
 .banner--conocimiento__block{
     background-color: #CFF7ED; 
+    padding: 20px;
 }
 .banner--drupalcamp {
     background-color: #FBF9C7;
 }
 .banner--drupalcamp__block{
     background-color: #F7F4B0;
+    padding: 20px;
 }
-.banner--drupalcamp__paragraph, .banner--educacion__paragraph {
+.banner--drupalcamp__paragraph {
     margin: 0;
 }
 .banner--educacion {
@@ -144,11 +101,14 @@
 .banner--education__block{
     background-color: #97ECFF;
     text-align: center;
-    margin-left: 300px;
-    margin-right: 300px;
+    padding: 20px;
 }
 .banner--fellowship {
     background-color: #E2FCFF;
+}
+.banner--fellowship .separator,
+.banner--clientes .separator{
+    margin-top: 20px;
 }
 .banner--fellowship__img{
     margin-left: 0;
@@ -159,35 +119,37 @@
 .banner--clientes {
     background-color: #FDFDFD;   
 }
+.banner--clientes__logos{
+    padding-left: 20px;
+    width: 360px;
+    margin: 0;
+}
+.banner--clientes__logos{
+    margin: 0;
+    flex-direction: column;
+}
 .banner--cliente--bg__logo {
     background-color: #e6e6e6; 
     background-image: url("../img/textura.png");
-    height: 190px;
-    width: 295px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-}
-.banner--clientes__logos{
-    margin-left: 70px;
-    display: flex;
-    flex-direction: row;
+    height: 120px;
+    width: 320px;
+    margin-bottom: 10px;
 }
 .banner--clientes__logo {
+    margin-left: 30px;
     height: 80px;
-    width: 200px;
-    margin-top: 55px;
-    margin-left: 50px;
-    padding: 0;
+    width: 80%;
+    padding-top: 20px;
 }
 .logo--cuadrado{
-    margin-left: 115px;
+    margin-left: 120px;
     height: 80px;
     width: 80px;
 }
 .logo--semicuadrado{
     height: 80px;
     width: 140px;
-    margin-left: 80px;
+    margin-left: 95px;
 }
 .banner--accesibilidad {
     background-color: #7D5B92;
@@ -196,9 +158,7 @@
 .banner--accesibilidad__block {
     background-color:  #75518C;
     text-align: center;
-}
-.space{
-    margin-bottom: 16pt;
+    padding: 20px; 
 }
 .light{
     font-weight: 100;
@@ -211,16 +171,16 @@
 }
 .banner--sectorpublico__block{
     background-color: #CFF7ED;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin: 0;
+    padding: 20px;
 }
 .banner--talleres {
     background-color: #FBF9C7;
 }
 .banner--talleres__block {
     background-color: #F7F4B0;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin: 0;
+    padding: 20px;
 }
 .banner--modulos {
     background-color: #8FDFF1;
@@ -258,9 +218,8 @@
 }
 .banner--salud__block {
     background-color: #F7F4B0;
-    margin-left: 30%;
-    margin-right: 30%;
-    padding: 30px;
+    margin: 0;
+    padding: 20px;
 }
 .banner--dota {
     background-color: #A0DDEE;
@@ -276,6 +235,5 @@
 }
 .banner--futuro__img {
     padding: 0;
-    margin-left: -100px;
     width: 80%;
 }
