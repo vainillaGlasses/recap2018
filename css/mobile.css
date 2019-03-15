@@ -1,9 +1,6 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Bangers');
 @import url('https://fonts.googleapis.com/css?family=Oxygen');
-body{
-    width: 480px;
-}
 .banner {
     background-image: url("../img/textura.png");
     margin: 0;
@@ -120,7 +117,7 @@ body{
     background-color: #FDFDFD;   
 }
 .banner--clientes__logos{
-    padding-left: 15%;
+    padding-left: 20px;
     width: 360px;
     margin: 0;
 }
