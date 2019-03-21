@@ -140,12 +140,14 @@
 }
 .banner--educacion {
     background-color: #8FDFF1;
+    justify-items: center;
 }
 .banner--education__block{
     background-color: #97ECFF;
     text-align: center;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 33.3%;
+    max-width: 30%;
+    min-width: 200px;
 }
 .banner--fellowship {
     background-color: #E2FCFF;
@@ -208,19 +210,23 @@
 }
 .banner--sectorpublico {
     background-color: #B1ECDB;
+    justify-items: center;
 }
 .banner--sectorpublico__block{
     background-color: #CFF7ED;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 33.3%;
+    max-width: 30%;
+    min-width: 200px;
 }
 .banner--talleres {
     background-color: #FBF9C7;
+    justify-items: center;
 }
 .banner--talleres__block {
     background-color: #F7F4B0;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 33.3%;
+    max-width: 30%;
+    min-width: 200px;
 }
 .banner--modulos {
     background-color: #8FDFF1;
