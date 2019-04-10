@@ -6,15 +6,15 @@
     <link rel="stylesheet" href="css/normalize.css">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="only screen and (max-width: 400px)" href="css/mobile.css" />
-    <link rel="stylesheet" media="only screen and (min-width: 401px)" href="css/desktop.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
+    <script src="/js/script.js"></script>
 
     <title>Recap2018 | Manatí 2018</title>
 </head>
 <body>
     <section class="banner banner--manati">
-        <div class="banner__container banner__row">
+        <div class="banner__container banner__row" id="manati-row">
             <img class="banner--manati__img" src="img/MANATI EN EL 2018.png" alt="">
             <p class="banner--manati__paragraph space">2018 fue el año en el que nuestro equipo utilizó todos sus conocimientos acumulados: Aplicamos la tecnología en grandes problemas para la web en el sector público, en organizaciones sin fines de lucro y en el sector comercial. Nuestro enfoque fue hacer una web más humana para clientes, ciudadanía, consumidores y público con discapacidad.</p>
         </div>
@@ -26,8 +26,8 @@
             <img class="separator" src="img/separador.svg">
             <div class="banner__block banner--conocimiento__block textura">
             
-                <div class="banner__row">
-                    <div class="banner__paragraph col-1">
+                <div class="banner__row" id="conocimiento-row">
+                    <div class="banner__paragraph col-1" id="conocimiento-paragraph1">
                         <p class="banner__paragraph bold">Beto</p>
                         <ul class="banner__ul font-12">
                             <li>Nonprofit Technology Conference /  New Orleans, EEUU</li>
@@ -41,7 +41,7 @@
                             <li>Certified Kubernetes Administrator</li>
                         </ul><br>
                     </div>
-                    <div class="banner__paragraph col-2">
+                    <div class="banner__paragraph col-2" id="conocimiento-paragraph2">
                         <p class="banner__paragraph bold">Andrés</p>
                         <ul class="banner__ul font-12">
                             <li>Machine Learning, Curso de la Escuela de Verano del CIID</li>
@@ -68,9 +68,9 @@
             <p class="banner__subtitle">Este año de nuevo co-organizamos el tradicional Drupal Camp junto con  la <br>comunidad y no fuimos para Liberia</p>
             <img class="separator" src="img/separador.svg">
             <div class="banner__block banner--drupalcamp__block textura">
-                <div class="banner__row left-align">
-                    <div class="banner__paragraph col-1 ">
-                        <p class="banner__subtitle left">CHARLAS</p>
+                <div class="banner__row left-align" id="drupalcamp-row">
+                    <div class="banner__paragraph col-1" id="drupalcamp-paragraph1">
+                        <p id="" class="banner__subtitle left">CHARLAS</p>
                         <p><span class="bold">Keren:</span> UX Design 101 para desarrolladores</p>
                         <p><span class="bold">Allan:</span> Investigación en Diseño Centrado en el Usuario</p>
                         <p><span class="bold">Kevin y Dhari:</span> Humpback, nuestra herramienta para crear fácilmente sitios web con Drupal 8</p>
@@ -78,8 +78,8 @@
                         <p><span class="bold">Rodro:</span> ¿Cómo mejorar en un 350% el tiempo de transacción de un sitio ya en marcha?</p>
                         <p><span class="bold">Sammy:</span> Lightning talk ¿Cómo hacer un mapa personalizado con Google Maps?</p>
                     </div>
-                    <div class="banner__paragraph col-2">
-                        <p class="banner__subtitle left">TALLERES</p>
+                    <div class="banner__paragraph col-2" id="drupalcamp-paragraph2">
+                        <p id="drupalcamp__paragraph2" class="banner__subtitle left">TALLERES</p>
                         <p><span class="bold">Keren y Allan:</span> Taller de prototipado con Figma</p>
                         <p><span class="bold">Beto y Lu:</span> Ideación con el método Design Studio</p>
                     </div>
@@ -109,26 +109,24 @@
         <div class="banner__container">
             <p class="banner__title">Fellowship, nuevos miembros</p>
             <p class="banner__subtitle">Este año tuvimos un gran aleado. Junto con Myplanet realizamos el primer programa de fellowship: 2 semanas de formación intensiva y validación de capacidades. Gracias a esto tenemos nuevos miembros:</p>
-            <p class="banner__paragraph center">Karolina,  Nelson,  Luis y  Samantha</p>
+            <p class="banner__paragraph center space-up">Karolina,  Nelson,  Luis y  Samantha</p>
             <img class="separator" src="img/separador.svg">
             <img class="banner__img" src="img/fellow/manos chocando.png" alt="chocar puños">
         </div>
     </section>
     <section class="banner banner--clientes">
         <div class="banner__container">
-            <p class="banner__title">Conocimos gente muy tuanis y gracias a eso este año seguimos afianzando nuevas relaciones y proyectos.</p>
+            <p class="banner__title" id="clientes-title">Conocimos gente muy tuanis y gracias a eso este año seguimos afianzando nuevas relaciones y proyectos</p>
             <img class="separator" src="img/separador.svg">
             <div class="banner--clientes__logos">
-                <div class="banner--cliente--bg__logo"><img class="banner--clientes__logo logo--cuadrado" src="img/logos/myplanet.png" alt="logo myPlanet"></div>
-                <div class="banner--cliente--bg__logo"><img class="banner--clientes__logo logo--semicuadrado" src="img/logos/MCJ.png" alt="logo ministerio de cultura y juventud"></div>
-                <div class="banner--cliente--bg__logo"><img class="banner--clientes__logo " src="img/logos/bac.png" alt="logo bac"></div>
-            </div><div class="banner--clientes__logos">    
-                <div class="banner--cliente--bg__logo"><img class="banner--clientes__logo logo--cuadrado" src="img/logos/conversable.png" alt="logo conversable"></div>
-                <div class="banner--cliente--bg__logo"><img class="banner--clientes__logo logo--semicuadrado" src="img/logos/DNN.png" alt="logo dnn"></div>
-                <div class="banner--cliente--bg__logo"><img class="banner--clientes__logo" src="img/logos/Hipatia.png" alt="logo hipatia"></div>
-            </div><div class="banner--clientes__logos"> 
-                <div class="banner--cliente--bg__logo"><img class="banner--clientes__logo" src="img/logos/teensmart.png" alt="logo teensmart"></div>
-                <div class="banner--cliente--bg__logo"><img class="banner--clientes__logo" src="img/logos/alleanza.png" alt="logo alleanza"></div>
+                <span class="banner--cliente--bg__logo"><img class="banner--clientes__logo logo--cuadrado" src="img/logos/myplanet.png" alt="logo myPlanet"></span>
+                <span class="banner--cliente--bg__logo"><img class="banner--clientes__logo logo--semicuadrado" src="img/logos/MCJ.png" alt="logo ministerio de cultura y juventud"></span>
+                <span class="banner--cliente--bg__logo"><img class="banner--clientes__logo " src="img/logos/bac.png" alt="logo bac"></span>
+                <span class="banner--cliente--bg__logo"><img class="banner--clientes__logo logo--cuadrado" src="img/logos/conversable.png" alt="logo conversable"></span>
+                <span class="banner--cliente--bg__logo"><img class="banner--clientes__logo logo--semicuadrado" src="img/logos/DNN.png" alt="logo dnn"></span>
+                <span class="banner--cliente--bg__logo"><img class="banner--clientes__logo" src="img/logos/Hipatia.png" alt="logo hipatia"></span>
+                <span class="banner--cliente--bg__logo"><img class="banner--clientes__logo" src="img/logos/teensmart.png" alt="logo teensmart"></span>
+                <span class="banner--cliente--bg__logo"><img class="banner--clientes__logo" src="img/logos/alleanza.png" alt="logo alleanza"></span>
             </div>
         </div>
     </section>
@@ -183,9 +181,9 @@
     <section class="banner banner--contribuciones">
         <div class="banner__container">
             <p class="banner__title">Contribuciones</p>
-            <div class="banner--contribuciones__block banner__bg__img">
-                <div class="banner__row">
-                    <div class="banner__paragraph font-12 col-1">
+            <div class="banner__block banner--contribuciones__block banner--contibuciones__bg__img">
+                <div class="" id="contibuciones-row">
+                    <div class="banner__paragraph font-12" id="contribuciones-paragraph1">
                         <p><span class="bold font-14">Kevin</span></p>
                         <ul>
                             <li>Voluntariado en DrupalCon Nashville</li>
@@ -217,7 +215,7 @@
                                 </ul>
                             </ul>
                     </div>
-                    <div class="banner__paragraph font-12 col-2">
+                    <div class="banner__paragraph font-12" id="contribuciones-paragraph2">
                         <p><span class="bold font-14">Keren</span></p>
                         <ul>
                             <li>Contribución completando perfiles de mujeres costarricenses en política en Wikipedia.</li>
@@ -316,7 +314,6 @@
             <img class="banner__img" src="img/futuro/Fututo.png" alt="nube">
         </div>
     </section>
-
-    <script src="js/script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>

@@ -1,10 +1,93 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Bangers');
 @import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+@media screen and (min-width: 1024px) {
+    .banner__container{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .banner__block {
+        max-width: 60%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+    .banner__img {
+        margin-top: 60px;
+        padding-left: 20%;
+        max-width: 60%; 
+    }
+    .banner--manati__paragraph{
+        padding-left: 20px;
+        margin-top: 20%
+    }
+    .logo--cuadrado{
+        height: 80px;
+        width: 80px;
+    }
+    .logo--semicuadrado{
+        height: 80px;
+        width: 140px;
+    }
+    .banner--cliente--bg__logo {
+        height: 190px;
+        width: 295px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        margin: 0 auto;
+    }
+    .banner--talleres__block,
+    .banner--sectorpublico__block,
+    .banner--salud__block{
+        max-width: 40%;
+    }
+}
+@media (max-width: 980px) {
+    .banner{
+        max-width: 980px;
+    }
+    .banner__block {
+        max-width: 60%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+    .banner--manati__paragraph{
+        padding-left: 20px;
+        margin-top: 20%;
+    }
+}
+@media (max-width: 768px) {
+    .banner{
+        max-width: 768px;
+    }
+    .banner__block {
+        max-width: 60%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 480px){
+    .banner{
+        max-width: 480px;
+    }
+    .banner__block {
+        padding: 30px;
+        box-shadow: 0px;
+        border-radius: 0px;
+    }
+}
+
+/* General Seetings */
 .banner {
     background-image: url("../img/textura.png");
     margin: 0;
-    align-content: center;
+}
+.banner__block{
+    min-height: 100px;
+    padding: 40px;
+    margin: auto;
+    justify-content: center;
 }
 .banner__title, .banner__subtitle {
     color: #2E3B46;
@@ -15,6 +98,7 @@
     font-family: "Bangers";
     font-size: 30pt;
     margin: 0;
+    padding: 20px;
     padding-top: 40px;
 }
 .banner__subtitle {
@@ -33,9 +117,19 @@
     font-weight: 100;
     margin: 0;
 }
+.banner__row {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.space{
+    letter-spacing: 1px;
+}
 .separator{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
     margin-bottom: 20px;
-    margin-left: 40%;
 }
 .bold {
     font-weight: bold;
@@ -55,100 +149,108 @@
     background-image: url("../img/textura.png");
     margin: 0;
 }
-.banner--manati {
-    padding: 0;
-    margin: 0;
-    background-color: #2E3B47;
+.col-1 {
+    width: 40%;
 }
-.banner--manati__paragraph {
+.col-2 {
+    margin-left: 10%;
+    width: 40%;
+}
+.light{
+    font-weight: 100;
+}
+.white {
+    color: #FFFFFF;
+}
+.space-up{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*  END General Settings */
+
+/* Colors */
+.banner--manati{
+    padding:20px;
+    background-color: #2E3B47;
+    display: flex;
+}
+.banner--manati__paragraph{
     color: #FFFFFF;
     font-family: "Oxygen", sans-serif;
     font-size: 18px;
-    padding-top: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 40px;
     line-height: 30px;
-    margin-bottom: 0;
+    max-width: 80%;
 }
-.banner--manati__img {
-    padding-left: 30px;
-    padding-top: 20px;
-    width: 300px;
+.banner--manati__img{
+    max-width: 80%;
+    margin: 0 auto;
+    height: 300px;
 }
 .banner--conocimiento {
     background-color: #A0EEDA;
 }
 .banner--conocimiento__block{
-    background-color: #CFF7ED; 
-    padding: 20px;
+    background-color: #CFF7ED;
+    margin:auto;
 }
 .banner--drupalcamp {
     background-color: #FBF9C7;
 }
 .banner--drupalcamp__block{
     background-color: #F7F4B0;
-    padding: 20px;
+    margin:auto;
 }
-.banner--drupalcamp__paragraph {
-    margin: 0;
-}
+.banner--drupalcamp__paragraph{} 
+.banner--educacion{}
+.banner--educacion__paragraph{}
 .banner--educacion {
     background-color: #8FDFF1;
 }
 .banner--education__block{
     background-color: #97ECFF;
-    text-align: center;
-    padding: 20px;
+    margin:auto;
 }
 .banner--fellowship {
     background-color: #E2FCFF;
-}
-.banner--fellowship .separator,
-.banner--clientes .separator{
-    margin-top: 20px;
-}
-.banner--fellowship__img{
-    margin-left: 0;
-    margin-top: -450px;
-    padding-left: 0;
-    width: 100%;
 }
 .banner--clientes {
     background-color: #FDFDFD;   
 }
 .banner--clientes__logos{
     padding-left: 20px;
-    width: 360px;
-    margin: 0;
-}
-.banner--clientes__logos{
-    margin: 0;
-    flex-direction: column;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .banner--cliente--bg__logo {
+    display:flex;
+    justify-items: center;
     background-color: #e6e6e6; 
     background-image: url("../img/textura.png");
     height: 120px;
-    width: 320px;
+    width: 280px;
+    margin: 0 auto;
     margin-bottom: 10px;
 }
 .banner--clientes__logo {
-    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
     height: 80px;
     width: 80%;
     padding-top: 20px;
 }
 .logo--cuadrado{
-    margin-left: 120px;
     height: 80px;
     width: 80px;
 }
 .logo--semicuadrado{
     height: 80px;
     width: 140px;
-    margin-left: 95px;
 }
+
 .banner--accesibilidad {
     background-color: #7D5B92;
     color: #FFFFFF;
@@ -157,27 +259,23 @@
     background-color:  #75518C;
     text-align: center;
     padding: 20px; 
+    margin:auto;
 }
-.light{
-    font-weight: 100;
-}
-.white {
-    color: #FFFFFF;
-}
+
 .banner--sectorpublico {
     background-color: #B1ECDB;
 }
 .banner--sectorpublico__block{
     background-color: #CFF7ED;
-    margin: 0;
-    padding: 20px;
+    margin:auto;
 }
 .banner--talleres {
     background-color: #FBF9C7;
+    margin:auto;
 }
 .banner--talleres__block {
     background-color: #F7F4B0;
-    margin: 0;
+    margin: auto;
     padding: 20px;
 }
 .banner--modulos {
@@ -185,18 +283,6 @@
 }
 .banner--contribuciones {
     background-color: #E2FCFF;
-}
-.banner--contribuciones__block {
-    padding-top: 100px;
-    padding-left: 60px;
-    padding-right: 90px;
-    padding-bottom: 30px;
-}
-.banner__bg__img {
-    background-position: 0px 0px;
-    background-size: 100%;
-    background-image: url("../img/contribu/contribu.png");
-    background-repeat: no-repeat;
 }
 .banner--cancion {
     background-color: #FFD4E9;  
@@ -207,16 +293,13 @@
 .banner--pizza{
     background-color: #A0EEDA;
 }
-.banner--pizza__img, .banner--cafe__img{
-    width: 100%;
-    margin-top: -250px;
-}
+
 .banner--salud{
     background-color: #FBF8CC;
 }
 .banner--salud__block {
     background-color: #F7F4B0;
-    margin: 0;
+    margin: auto;
     padding: 20px;
 }
 .banner--dota {
@@ -230,8 +313,4 @@
 }
 .banner--futuro{
     background-color: #785E8F;
-}
-.banner--futuro__img {
-    padding: 0;
-    width: 80%;
 }
