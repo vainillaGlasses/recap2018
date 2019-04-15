@@ -41,6 +41,9 @@
     .banner--salud__block{
         max-width: 40%;
     }
+    .banner--clientes__logos{
+        padding-bottom: 50px;
+    }
 }
 @media (max-width: 980px) {
     .banner{
@@ -54,6 +57,9 @@
     .banner--manati__paragraph{
         padding-left: 20px;
         margin-top: 20%;
+    }
+    .banner--clientes__logos{
+        padding-bottom: 50px;
     }
 }
 @media (max-width: 768px) {
