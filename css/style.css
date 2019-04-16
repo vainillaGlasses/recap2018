@@ -44,6 +44,19 @@
     .banner--clientes__logos{
         padding-bottom: 50px;
     }
+    .banner--contribuciones__block{
+        width: 100%;
+    }
+    #contribuciones-paragraph1,
+    #contribuciones-paragraph2 {
+        padding-top: 40px;
+    }
+    #contribuciones-paragraph1 {
+        margin-left: -60px;
+    }
+    #contribuciones-paragraph2 {
+        padding-left: -20px;
+    }
 }
 @media (max-width: 980px) {
     .banner{
@@ -289,6 +302,7 @@
 }
 .banner--contribuciones {
     background-color: #E2FCFF;
+    padding-bottom: 50px;
 }
 .banner--cancion {
     background-color: #FFD4E9;  
@@ -320,3 +334,20 @@
 .banner--futuro{
     background-color: #785E8F;
 }
+
+
+.banner--contibuciones__bg{
+    background-image: url("../img/contribu/badge1.png"),url("../img/contribu/badge3.png"),url("../img/contribu/badge2.png");
+    background-position: top center, bottom left, left;
+    background-repeat: no-repeat, no-repeat,repeat-y;
+    background-size: 100%, 97%, 97%;
+}
+
+/* .banner--contibuciones__bg{
+    background-image: url("../img/contribu/badge1.png"),
+    url("../img/contribu/badge2.png"),
+    url("../img/contribu/badge3.png");
+    background-repeat: no-repeat, repeat-y, no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
